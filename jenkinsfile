@@ -1,0 +1,10 @@
+node('UBANTU')
+{
+    stage('GIT'){
+       git'https://github.com/harishvangapandu/jenkinspractice.git'
+    }
+    stage('package'){
+           sh 'mvn package'
+    }
+   
+}
